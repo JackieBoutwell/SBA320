@@ -24,19 +24,6 @@ function App() {
 //   };
 //   console.log(starwars)
 
-   const [plants, setPlants] = useState(null) 
-  useEffect(( )=> {
-    getPlants()
-  }, [])
-  
-const getPlants = async (searchTerm) => {
-  const response = await fetch(
-    `https://perenual.com/api/species-list?key=sk-wgYH664bba6e628725587` 
-  );
- const data = await response.json();
-  setPlants(data);
-};
-  console.log(plants)
 
 
 
