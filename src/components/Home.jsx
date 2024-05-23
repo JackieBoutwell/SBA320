@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Plantsinfo from './component2/Plantsinfo';
 
 const Home = () => {
     // // let name ='jackie';
@@ -94,9 +95,11 @@ const Home = () => {
                     
                     <p>Water Guide {data.watering}</p>
 
-                    <img src={data.default_image.original_url}></img>
+                    <img src={data.default_image.small_url}></img>
                 </div>
             ))}
+
+            <Plantsinfo plants={plants} />
             
             <h2>Homepage</h2>
 
