@@ -77,6 +77,13 @@ const Home = () => {
         getPlants();
     }, []);
 
+
+          const handleDelete = (id) => {
+            const newPlants = plants.filter(plant => blog.id !== id);
+            setPlants (newPlants)
+        }
+        
+
     const handleClick = () => {
         setName('jackie');
     }
@@ -99,7 +106,7 @@ const Home = () => {
                 </div>
             ))}
 
-            <Plantsinfo plants={plants} />
+            <Plantsinfo plants={plants} handleDelete={handleDelete} />
             
             <h2>Homepage</h2>
 
