@@ -3,6 +3,9 @@ import Plantsinfo from './component2/Plantsinfo';
 
 const Home = () => {
     // // let name ='jackie';
+
+    //BLOCKER - did not need UseState
+
     //const [apiData, setData] = useState({});
     
     //const [plants, setPlants] = useState([]);
@@ -25,6 +28,9 @@ const Home = () => {
             //`https://perenual.com/api/species/details/${searchTerm}?key=sk-wgYH664bba6e628725587`
         );
         const data = await response.json();
+
+        // BLOCKER - BELOW I HAD TO HARD CODED MY DATA B/C I ONLY HAD A CURTAIN AMOUNT OF REQUESTS THAT I COULD TAKE FROM THE API I WAS USING
+
         //console.log(data.data.default_image.small_url);
         // const data = {
         //     "data": [
@@ -98,9 +104,11 @@ const Home = () => {
             type: 'delete_plant',
             id: id
         })
+        //DID NOT NEED
         // const newPlants = plants.filter(plant => plant.id !== id);
         // setPlants(newPlants);
     }
+    //DID NOT NEED
     // const handClickAgain = (name) => {
     // console.log('hello' + name);
     // }
