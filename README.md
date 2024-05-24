@@ -54,7 +54,7 @@ There are possibilities to expand app for more features like:
 
 1. Home page:
    <br>
-   <img src="./src/static/320-react.png" width="100" height="100">
+   <img src="./src/static/320-react.png" width="500" height="500">
 
 ## Site link
 
